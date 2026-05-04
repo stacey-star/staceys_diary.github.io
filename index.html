@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Diary - Home</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>Stacey's Diary</h2>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link active" data-page="home">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link" data-page="about">About Me</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#diary" class="nav-link" data-page="diary">Diary</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#gallery" class="nav-link" data-page="gallery">Gallery</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link" data-page="contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="page active">
+        <div class="main-container">
+            <div class="content-container">
+                <div class="home-content">
+                    <h1 class="home-title">Welcome to My Diary</h1>
+                    <p class="home-subtitle">My personal space to capture my thoughts and memories</p>
+                    <div class="profile-section">
+                        <div class="profile-text">
+                            <h2>Hi, I'm Stacey Rhianne Baqurian</h2>
+                            <p>A student from CSTA and taking Bachelor of Science in Information Technology</p>
+                            <button class="cta-button">Explore more about me</button>
+                        </div>
+                        <div class="profile-image-container">
+                            <img src="profile.jpg" alt="Profile Picture" class="profile-img">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="page">
+        <div class="main-container">
+            <div class="content-container">
+                <div class="container">
+                    <h2 class="section-title"> 👤 About Me</h2>
+                    <div class="about-content">
+                        <p>
+                            I am a hardworking and curious person who is always eager to learn new things and improve myself. I enjoy spending my time exploring my interests, whether it’s studying, using technology, or being creative in my own way. I value my family, friends, and the experiences that help shape who I am today. I believe in staying positive, setting goals, and doing my best in everything I do. As I continue to grow, I aim to become more confident, responsible, and successful in achieving my
+                            <br>
+                            <br>
+                            Now I aspire to become a UI/UX designer because I enjoy creating designs that are not only visually appealing but also easy and meaningful for people to use. I want to learn how to understand users’ needs, solve problems creatively, and turn ideas into interactive digital experiences. Aside from designing, I also aim to improve my skills in coding, communication, and teamwork so I can work effectively in real-world projects. In the future, I hope to build websites and applications that make people’s lives more convenient while continuously growing, learning new trends, and exploring different areas in technology and design.
+                        </p>
+                        <div class="about-stats">
+                            <div class="stat-item">
+                                <h3>20</h3>
+                                <p>Years Old</p>
+                            </div>
+                            <div class="stat-item">
+                                <h3>14</h3>
+                                <p>Diary Entries</p>
+                            </div>
+                            <div class="stat-item">
+                                <h3>24</h3>
+                                <p>Photos</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Diary Section -->
+    <section id="diary" class="page">
+        <div class="main-container">
+            <div class="content-container">
+                <div class="container">
+                    <h2 class="section-title"> 📔 My Diary Entries</h2>
+                    <div class="diary-grid">
+
+
+                        <article class="diary-entry">
+                            <div class="entry-date">2024-03-02</div>
+                            <h3>1st day of Sport Fest</h3>
+                            <p>In my 2nd year here in college, this sport-fest is super saya and napaka-galing ng IT dept so much then the mascot HAHAH grabe super funny and galing and I didn't expect na it's kuya Ian</p>
+                            <br>
+                            <button class="delete-btn" onclick="deleteEntry(this)">Delete</button>
+
+
+                        </article>
+                        <article class="diary-entry">
+                            <div class="entry-date">2024-03-03</div>
+                            <h3>2nd Day of Sport Fest</h3>
+                            <p>Sobrang galing ng mga players! and the bball game is on fire talaga 🤯🤯🤯</p>
+                            <button class="delete-btn" onclick="deleteEntry(this)">Delete</button>
+                        </article>
+
+                        <article class="diary-entry">
+                            <div class="entry-date">2024-03-04</div>
+                            <h3>3rd Day of Sport Fest</h3>
+                            <p>Yess ! Even may talo sa ibang games atleast pasok pa rin sa championship lalo na bball, nakaka-excitee !</p>
+                            <button class="delete-btn" onclick="deleteEntry(this)">Delete</button>
+                        </article>
+
+                        <article class="diary-entry">
+                            <div class="entry-date">2024-03-05</div>
+                            <h3>4th Day of Sport Fest</h3>
+                            <p>Yawoo, champ IT bball and still congrats sa iba and all overall champ again ang IT! , good news pa kasi move ang exam may time pa mag review!</p>
+                            <button class="delete-btn" onclick="deleteEntry(this)">Delete</button>
+                        </article>
+
+                        <article class="diary-entry">
+                            <div class="entry-date">2024-03-10</div>
+                            <h3>It's exam week for Mid-term</h3>
+                            <p>Super nakaka-relief kasi tapos na exam and thankful kasi hindi lahat bagsak and I hope sa mga activities matataas din huhu!</p>
+                            <br>
+                            <button class="delete-btn" onclick="deleteEntry(this)">Delete</button>
+                        </article>
+
+                        <article class="diary-entry">
+                            <div class="entry-date">2024-03-22</div>
+                            <h3>Last week of the Month: March</h3>
+                            <p>Oc again whole week! and bakbak dapat sa appdev for exhibit, lez goo!</p>
+                            <button class="delete-btn" onclick="deleteEntry(this)">Delete</button>
+                        </article>
+
+                        <article class="diary-entry">
+                            <div class="entry-date">2024-04-02</div>
+                            <h3>Realization</h3>
+                            <p>Lately I was thiking if para sa akin ba itong program. I am thinking sometimes
+                                na para ba ito sa akin since I am not good  at this program pero I think, I just have to help myself and trust gods plan
+                            </p>
+                            <br>
+                            <button class="delete-btn" onclick="deleteEntry(this)">Delete</button>
+                        </article>
+
+                         <article class="diary-entry">
+                            <div class="entry-date">2024-04-05</div>
+                            <h3>Trabaho: appdev</h3>
+                            <p>Grabe sobrang bilis ng araw, we only have 2-3 weeks para gumawa ng exhibit and I feel being a leader is very hard. </p>
+                            <button class="delete-btn" onclick="deleteEntry(this)">Delete</button>
+                        </article>
+
+                        <article class="diary-entry">
+                            <div class="entry-date">2024-04-08</div>
+                            <h3>Random thoughts: 1</h3>
+                            <p>I am thankful sa mga taong nakilala ko this college. It's really feels different to be with them but in a mature way, some is not okay
+                                but luckily i have those people na I am comfortable and confident to be with.
+                            </p>
+                            <button class="delete-btn" onclick="deleteEntry(this)">Delete</button>
+                        </article>
+
+                        <article class="diary-entry">
+                            <div class="entry-date">2024-04-10</div>
+                            <h3>Random thoughts: 2</h3>
+                            <p> I miss my shs friends so much, I hope their okay and still living good. I hope na mag tugma2 na mga schedule namin huhu
+                            </p>
+                            <button class="delete-btn" onclick="deleteEntry(this)">Delete</button>
+                        </article>
+
+                        <article class="diary-entry">
+                            <div class="entry-date">2024-04-13</div>
+                            <h3>Random thoughts: 3</h3>
+                            <p> Don't lose yourself in the middle of your emotion.
+                            </p>
+                            <button class="delete-btn" onclick="deleteEntry(this)">Delete</button>
+                        </article>
+
+                        <article class="diary-entry">
+                            <div class="entry-date">2024-04-17</div>
+                            <h3>1 week before exhibit</h3>
+                            <p>Overall I realize, you have to teach yourself. You don't have to relay to other people, because if you do. You will lose and if you lose?
+                                there's a possibility you will lose EVERYTHING.
+                            </p>
+                            <button class="delete-btn" onclick="deleteEntry(this)">Delete</button>
+                        </article>
+
+                        <article class="diary-entry">
+                            <div class="entry-date">2024-04-19</div>
+                            <h3>Song Lyrics</h3>
+                            <p> "No matter how good you think some-body is, always protect your heart" ~ Lost me by Giveon
+                            </p>
+                            <br>
+                            <button class="delete-btn" onclick="deleteEntry(this)">Delete</button>
+                        </article>
+
+                        <article class="diary-entry">
+                            <div class="entry-date">2024-04-25</div>
+                            <h3>Random thoughts: 4</h3>
+                            <p> Sana mag ka roon na ako ng inspiration ❤️
+                            </p>
+                            <button class="delete-btn" onclick="deleteEntry(this)">Delete</button>
+                        </article>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="page">
+        <div class="main-container">
+            <div class="content-container">
+                <div class="container">
+                    <h2 class="section-title"> 🎥 My Gallery</h2>
+                    <div class="gallery-grid">
+                        <div class="gallery-item">
+                            <img src="pic1.jpg" alt="Gallery Image 1">
+                            <div class="gallery-overlay">
+                                <p>Dept-shirt 2026</p>
+                                <br>
+                                <button class="delete-btn" onclick="deleteGalleryItem(this)">Delete</button>
+                            </div>
+                        </div>
+
+
+                        <div class="gallery-item">
+                            <img src="pic2.jpg" alt="Gallery Image 2">
+                            <div class="gallery-overlay">
+                                <p>With my Educ Friends during Sport Fest</p>
+                                <br>
+                                <button class="delete-btn" onclick="deleteGalleryItem(this)">Delete</button>
+                            </div>
+                        </div>
+
+                        <div class="gallery-item">
+                            <img src="pic3.jpg" alt="Gallery Image 3">
+                            <div class="gallery-overlay">
+                                <p>with the troops</p>
+                                <br>
+                                <button class="delete-btn" onclick="deleteGalleryItem(this)">Delete</button>
+                            </div>
+                        </div>
+
+                        <div class="gallery-item">
+                            <img src="pic4.jpg" alt="Gallery Image 4">
+                            <div class="gallery-overlay">
+                                <p>Filming for Phil-Lit</p>
+                                <br>
+                                <button class="delete-btn" onclick="deleteGalleryItem(this)">Delete</button>
+                            </div>
+                        </div>
+
+                        <div class="gallery-item">
+                            <img src="pic5.jpg" alt="Gallery Image 5">
+                            <div class="gallery-overlay">
+                                <p>March is Women's Month</p>
+                                <br>
+                                <br>
+                                <button class="delete-btn" onclick="deleteGalleryItem(this)">Delete</button>
+                            </div>
+                        </div>
+
+                        <div class="gallery-item">
+                            <img src="pic6.jpg" alt="Gallery Image 5">
+                            <div class="gallery-overlay">
+                                <p>appdev time</p>
+                                <br>
+                                <button class="delete-btn" onclick="deleteGalleryItem(this)">Delete</button>
+                            </div>
+                        </div>
+
+                        <div class="gallery-item">
+                            <img src="pic7.jpg" alt="Gallery Image 5">
+                            <div class="gallery-overlay">
+                                <p>Pretty me</p>
+                                <br>
+                                <button class="delete-btn" onclick="deleteGalleryItem(this)">Delete</button>
+                            </div>
+                        </div>
+
+                        <div class="gallery-item">
+                            <img src="pic8.jpg" alt="Gallery Image 5">
+                            <div class="gallery-overlay">
+                                <p>Our moral support</p>
+                                <br>
+                                <button class="delete-btn" onclick="deleteGalleryItem(this)">Delete</button>
+                            </div>
+                        </div>
+
+                        <div class="gallery-item">
+                            <img src="pic9.jpg" alt="Gallery Image 5">
+                            <div class="gallery-overlay">
+                                <p>I can't imagine, I can do drill</p>
+                                <br>
+                                <br>
+                                <button class="delete-btn" onclick="deleteGalleryItem(this)">Delete</button>
+                            </div>
+                        </div>
+
+                        <div class="gallery-item">
+                            <img src="pic10.jpg" alt="Gallery Image 5">
+                            <div class="gallery-overlay">
+                                <p>Still proud and really worth it</p>
+                                <br>
+                                <button class="delete-btn" onclick="deleteGalleryItem(this)">Delete</button>
+                            </div>
+                        </div>
+
+                        <div class="gallery-item">
+                            <img src="pic11.jpg" alt="Gallery Image 5">
+                            <div class="gallery-overlay">
+                                <p>2-3 Champ hehey</p>
+                                <br>
+                                <button class="delete-btn" onclick="deleteGalleryItem(this)">Delete</button>
+                            </div>
+                        </div>
+
+                        <div class="gallery-item">
+                            <img src="pic12.jpg" alt="Gallery Image 5">
+                            <div class="gallery-overlay">
+                                <p>Celebration 🎉</p>
+                                <br>
+                                <button class="delete-btn" onclick="deleteGalleryItem(this)">Delete</button>
+                            </div>
+                        </div>
+
+                        <div class="gallery-item">
+                            <img src="pic13.jpg" alt="Gallery Image 5">
+                            <div class="gallery-overlay">
+                                <p>friend date ft. oc</p>
+                                <br>
+                                <button class="delete-btn" onclick="deleteGalleryItem(this)">Delete</button>
+                            </div>
+                        </div>
+
+                        <div class="gallery-item">
+                            <img src="pic14.jpg" alt="Gallery Image 5">
+                            <div class="gallery-overlay">
+                                <p>I love Coffee sm</p>
+                                <br>
+                                <button class="delete-btn" onclick="deleteGalleryItem(this)">Delete</button>
+                            </div>
+                        </div>
+
+                        <div class="gallery-item">
+                            <img src="pic15.jpg" alt="Gallery Image 5">
+                            <div class="gallery-overlay">
+                                <p>Spanish Latte on top</p>
+                                <br>
+                                <button class="delete-btn" onclick="deleteGalleryItem(this)">Delete</button>
+                            </div>
+                        </div>
+
+                        <div class="gallery-item">
+                            <img src="pic16.jpg" alt="Gallery Image 5">
+                            <div class="gallery-overlay">
+                                <p> IT WEEK </p>
+                                <br>
+                                <button class="delete-btn" onclick="deleteGalleryItem(this)">Delete</button>
+                            </div>
+                        </div>
+
+                        <div class="gallery-item">
+                            <img src="pic17.jpg" alt="Gallery Image 5">
+                            <div class="gallery-overlay">
+                                <p>Ang kolet</p>
+                                <br>
+                                <button class="delete-btn" onclick="deleteGalleryItem(this)">Delete</button>
+                            </div>
+                        </div>
+
+                        <div class="gallery-item">
+                            <img src="pic18.jpg" alt="Gallery Image 5">
+                            <div class="gallery-overlay">
+                                <p>Cutie HAHA</p>
+                                <br>
+                                <button class="delete-btn" onclick="deleteGalleryItem(this)">Delete</button>
+                            </div>
+                        </div>
+
+                        
+
+                        <div class="gallery-item">
+                            <img src="pic22.jpg" alt="Gallery Image 5">
+                            <div class="gallery-overlay">
+                                <p>Cutie bear 💞</p>
+                                <br>
+                                <button class="delete-btn" onclick="deleteGalleryItem(this)">Delete</button>
+                            </div>
+                        </div>
+
+                        <div class="gallery-item">
+                            <img src="pic23.jpg" alt="Gallery Image 5">
+                            <div class="gallery-overlay">
+                                <p>kkb (?)</p>
+                                <br>
+                                <button class="delete-btn" onclick="deleteGalleryItem(this)">Delete</button>
+                            </div>
+                        </div>
+
+                        <div class="gallery-item">
+                            <img src="pic24.jpg" alt="Gallery Image 5">
+                            <div class="gallery-overlay">
+                                <p>I love this 2</p>
+                                <br>
+                                <button class="delete-btn" onclick="deleteGalleryItem(this)">Delete</button>
+                            </div>
+                        </div>
+
+                        <div class="gallery-item">
+                            <img src="pic19.jpg" alt="Gallery Image 5">
+                            <div class="gallery-overlay">
+                                <p> Sweet Life </p>
+                                <br>
+                                <button class="delete-btn" onclick="deleteGalleryItem(this)">Delete</button>
+                            </div>
+                        </div>
+
+                        <div class="gallery-item">
+                            <img src="pic21.jpg" alt="Gallery Image 5">
+                            <div class="gallery-overlay">
+                                <p> Happy Life </p>
+                                <br>
+                                <button class="delete-btn" onclick="deleteGalleryItem(this)">Delete</button>
+                            </div>
+                        </div>
+
+                        <div class="gallery-item">
+                            <img src="pic20.jpg" alt="Gallery Image 5">
+                            <div class="gallery-overlay">
+                                <p>I love my people 💞</p>
+                                <br>
+                                <br>
+                                <button class="delete-btn" onclick="deleteGalleryItem(this)">Delete</button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="page">
+        <div class="main-container">
+            <div class="content-container">
+                <div class="container">
+                    <h2 class="section-title"> 📞 Contact Me</h2>
+                    <div class="contact-content">
+                        <div class="contact-info">
+                            <div class="contact-item">
+                                <h3>Email</h3>
+                                <p>staceybaquiran@gmail.com</p>
+                            </div>
+                            <div class="contact-item">
+                                <h3>Phone</h3>
+                                <p>+63 945 218 8909</p>
+                            </div>
+                            <div class="contact-item">
+                                <h3>Social</h3>
+                                <p>Facebook: Stacey Rhianne Baquiran</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <script src="script.js"></script>
+</body>
+</html>
