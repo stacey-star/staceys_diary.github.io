@@ -125,11 +125,11 @@ body {
     color: #4b5563;
 }
 
-/* Profile Section - CLOSER GAP & NO TRIANGLE */
+/* Profile Section */
 .profile-section {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 1rem; /* Reduced from 2rem to 1rem - CLOSER */
+    gap: 1rem;
     align-items: center;
     margin-top: 2rem;
 }
@@ -163,14 +163,13 @@ body {
     box-shadow: 0 15px 30px rgba(30, 64, 175, 0.4);
 }
 
-/* Profile Image - NO TRIANGLE FRAME */
 .profile-image-container {
     display: flex;
     justify-content: center;
 }
 
 .profile-img {
-    width: 320px; /* Nice size without triangle constraints */
+    width: 320px;
     height: 420px;
     object-fit: cover;
     border-radius: 25px;
@@ -247,7 +246,6 @@ body {
     padding: 2.5rem;
     border-radius: 20px;
     box-shadow: 0 15px 40px rgba(0,0,0,0.1);
-    position: relative;
     transition: all 0.3s ease;
     backdrop-filter: blur(10px);
 }
@@ -272,28 +270,7 @@ body {
     color: #1f2937;
 }
 
-.delete-btn {
-    background: #ef4444;
-    color: white;
-    border: none;
-    padding: 8px 20px;
-    border-radius: 25px;
-    cursor: pointer;
-    font-size: 0.9rem;
-    font-weight: 500;
-    margin-top: 1.5rem;
-    transition: all 0.3s ease;
-    position: absolute;
-    bottom: 1rem;
-    right: 1.5rem;
-}
-
-.delete-btn:hover {
-    background: #dc2626;
-    transform: scale(1.05);
-}
-
-/* Gallery Section - 4 PICS PER ROW */
+/* Gallery Section */
 .gallery-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -371,6 +348,25 @@ body {
 .contact-item p {
     color: #4b5563;
     font-size: 1.1rem;
+}
+
+/* Social links styling */
+.social-links {
+    margin-top: 1rem;
+}
+
+.social-links a {
+    color: #1e40af;
+    text-decoration: none;
+    font-weight: 600;
+    display: block;
+    margin-bottom: 0.5rem;
+    transition: all 0.3s ease;
+}
+
+.social-links a:hover {
+    color: #fbbf24;
+    text-decoration: underline;
 }
 
 /* Animations */
