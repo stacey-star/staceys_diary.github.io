@@ -1,4 +1,4 @@
-// Navigation functionality
+// Navigation functionality only
 document.addEventListener('DOMContentLoaded', function() {
     const navLinks = document.querySelectorAll('.nav-link');
     const pages = document.querySelectorAll('.page');
@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    // "Explore My Story" button - scrolls smoothly to About section
+    // "Explore more about me" button - goes to About section
     if (ctaButton) {
         ctaButton.addEventListener('click', function(e) {
             e.preventDefault();
@@ -38,23 +38,3 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 });
-
-// Delete diary entry function
-function deleteEntry(button) {
-    if (confirm('Are you sure you want to delete this entry?')) {
-        button.closest('.diary-entry').style.animation = 'fadeOut 0.3s ease-out';
-        setTimeout(() => {
-            button.closest('.diary-entry').remove();
-        }, 300);
-    }
-}
-
-// Delete gallery item function
-function deleteGalleryItem(button) {
-    if (confirm('Are you sure you want to delete this photo?')) {
-        button.closest('.gallery-item').style.animation = 'fadeOut 0.3s ease-out';
-        setTimeout(() => {
-            button.closest('.gallery-item').remove();
-        }, 300);
-    }
-}
